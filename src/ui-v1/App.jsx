@@ -4,6 +4,7 @@ import ThemeContext from './../style-root/ThemeContext';
 
 import { Container, Row, Col, Button, ButtonGroup, Form } from 'react-bootstrap';
 
+import Card from './../components/Card';
 import SiteHeader from './../components/SiteHeader';
 
 function App() {
@@ -25,10 +26,17 @@ function App() {
               <Button onClick={() => themeContext.setTheme('third')}>third</Button>
             </ButtonGroup>
 
-            <hr></hr>
-            <Button size="sm" variant="primary">Primary</Button> {' '}
-            <Button variant="info">Info</Button> {' '}
-            <Button size="sm" variant="danger">Danger</Button>
+            <Card title="Card TItle">
+              <p> Some quick example text to build on the card title and make up the bulk of
+              the card's content. </p>
+              <Button variant="primary">Go somewhere</Button>
+            </Card>
+
+            <Card>
+              <Button size="sm" variant="primary">Primary</Button> {' '}
+              <Button variant="info">Info</Button> {' '}
+              <Button size="sm" variant="danger">Danger</Button>
+            </Card>
 
             <Form>
               <Form.Group controlId="formBasicEmail">

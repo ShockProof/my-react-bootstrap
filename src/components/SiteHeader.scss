@@ -1,0 +1,10 @@
+.siteHeader {
+  background-color: $dark;
+  padding-left: 16px; /** just to fix spacing with bootstrap! */
+  padding-right: 16px; /** just to fix spacing with bootstrap! */
+
+  h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}

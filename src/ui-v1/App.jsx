@@ -37,39 +37,54 @@ function App() {
               <Button variant="info">Info</Button> {' '}
               <Button size="sm" variant="danger">Danger</Button>
             </Card>
-
-            <Form>
-              <Form.Group controlId="formBasicEmail">
-                <Form.Label size="sm">Email address</Form.Label>
-                <Form.Control size="sm" type="email" placeholder="Enter email" />
-                <Form.Text className="text-muted">
-                  We'll never share your email with anyone else.
-                </Form.Text>
-              </Form.Group>
-
-              <Form.Group controlId="formBasicName">
-                <Form.Label>Name</Form.Label>
-                <Form.Control type="text" placeholder="Enter name" />
-              </Form.Group>
-
-              <Form.Group controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
-              </Form.Group>
-
-              <Form.Group controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
-              </Form.Group>
-
-              <Form.Group controlId="formBasicTextarea">
-                <Form.Label>Example textarea</Form.Label>
-                <Form.Control as="textarea" rows="3" />
-              </Form.Group>
-
-              <Button variant="primary" type="submit"> Submit </Button>
-            </Form>
           </Col>
         </Row>
+
+        <Row>
+          <Col>
+            <Card>
+              <Form>
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Text className="text-muted">
+                    We'll never share your email with anyone else.
+                  </Form.Text>
+                </Form.Group>
+
+                <Form.Group controlId="formBasicPassword">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control type="password" placeholder="Password" />
+                </Form.Group>
+
+                <Button variant="success" type="submit"> Submit </Button>
+              </Form>
+            </Card>
+          </Col>
+
+          <Col>
+            <Card>
+              <Form>
+                <Form.Group controlId="formBasicName">
+                  <Form.Label size="sm">Name</Form.Label>
+                  <Form.Control size="sm" type="text" placeholder="Enter name" />
+                </Form.Group>
+
+                <Form.Group controlId="formBasicCheckbox">
+                  <Form.Check type="checkbox" label="Check me out" />
+                </Form.Group>
+
+                <Form.Group controlId="formBasicTextarea">
+                  <Form.Label>Example textarea</Form.Label>
+                  <Form.Control as="textarea" rows="3" />
+                </Form.Group>
+
+                <Button variant="primary" type="submit" size="sm"> Primary small </Button>
+              </Form>
+            </Card>
+          </Col>
+        </Row>
+
       </Container>
     </div>
   );

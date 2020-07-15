@@ -1,6 +1,9 @@
 $shockproof-background-color: #0b5269;
 $shockproof-primary-color: #978d58;
 $shockproof-dark: #03051e;
+$shockproof-text-color: $shockproof-primary-color;
+$shockproof-border-color: $shockproof-primary-color;
+$shockproof-border-width: 1px;
 $shockproof-border-radius: 1rem;
 
 @import "./BootstrapCustomization.scss";

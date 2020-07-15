@@ -35,7 +35,7 @@ function App() {
             <Card>
               <Button size="sm" variant="primary">Primary</Button> {' '}
               <Button variant="info">Info</Button> {' '}
-              <Button size="sm" variant="danger">Danger</Button>
+              <Button size="lg" variant="danger">Danger</Button>
             </Card>
           </Col>
         </Row>
@@ -65,18 +65,25 @@ function App() {
           <Col>
             <Card>
               <Form>
-                <Form.Group controlId="formBasicName">
-                  <Form.Label size="sm">Name</Form.Label>
-                  <Form.Control size="sm" type="text" placeholder="Enter name" />
+                <Form.Group as={Row} controlId="formBasicName">
+                  <Form.Label column sm="4" size="sm">Name</Form.Label>
+                  <Col sm="8" style={{paddingTop: 7}}>
+                    <Form.Control size="sm" type="text" placeholder="Enter name" />
+                  </Col>
                 </Form.Group>
 
-                <Form.Group controlId="formBasicCheckbox">
-                  <Form.Check type="checkbox" label="Check me out" />
+                <Form.Group as={Row} controlId="formBasicTextarea">
+                  <Form.Label column sm="4" size="sm">Example textarea</Form.Label>
+                  <Col sm="8" style={{paddingTop: 7}}>
+                    <Form.Control as="textarea" rows="3" size="sm"/>
+                  </Col>
                 </Form.Group>
 
-                <Form.Group controlId="formBasicTextarea">
-                  <Form.Label>Example textarea</Form.Label>
-                  <Form.Control as="textarea" rows="3" />
+                <Form.Group as={Row} controlId="formBasicCheckbox">
+                  <Form.Label column sm="4" size="sm">Example Checker</Form.Label>
+                  <Col sm="8" style={{paddingTop: 7}}>
+                    <Form.Check type="checkbox" label="Check me out" size="sm" />
+                  </Col>
                 </Form.Group>
 
                 <Button variant="primary" type="submit" size="sm"> Primary small </Button>

@@ -1,6 +1,4 @@
-import React, { useContext } from 'react';
-
-import ThemeContext from './../style-root/ThemeContext';
+import React from 'react';
 
 import Card from './../components/Card';
 import SiteHeader from './components/site-header';
@@ -9,24 +7,11 @@ import Input from './../components/form/Input';
 import Row from './../components/grid/Row';
 import Column from './../components/grid/Column';
 import Container from './../components/grid/Container';
-import ButtonGroup from './../components/button/ButtonGroup';
 import Button from './../components/button/Button';
 
-function ThemePicker({ themeContext }) {
-  return (
-    <Card title="Theme Picker">
-      <ButtonGroup size="sm" block>
-        <Button onClick={() => themeContext.setTheme('first')} label="first" size="sm" />
-        <Button onClick={() => themeContext.setTheme('second')} label="second" size="sm" />
-        <Button onClick={() => themeContext.setTheme('third')} label="third" size="sm" />
-      </ButtonGroup>
-    </Card>
-  );
-}
+import ThemePicker from './components/theme-picker';
 
 function App() {
-
-  const themeContext = useContext(ThemeContext);
 
   return (
     <div>
@@ -36,7 +21,7 @@ function App() {
         <Row>
           <Column>
             <hr></hr>
-            <ThemePicker themeContext={themeContext} />
+            <ThemePicker />
 
             <Card title="Card TItle">
               <p> Some quick example text to build on the card title and make up the bulk of

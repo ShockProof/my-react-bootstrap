@@ -1,0 +1,7 @@
+.siteHeader {
+  box-shadow: 0px 2px $shockproof-border-color;
+
+  .dropdown-toggle::after { /** didn't find any bootstrap variable for this */
+    color: $shockproof-primary-color;
+  }
+}

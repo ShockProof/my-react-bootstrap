@@ -5,7 +5,7 @@ import ThemeContext from './../style-root/ThemeContext';
 import { Container, Row, Col, Button, ButtonGroup, Form } from 'react-bootstrap';
 
 import Card from './../components/Card';
-import SiteHeader from './../components/SiteHeader';
+import SiteHeader from './components/site-header';
 
 function App() {
 

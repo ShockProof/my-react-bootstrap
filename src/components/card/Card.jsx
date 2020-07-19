@@ -6,7 +6,7 @@ function Card({title, children}) {
   return (
     <BootstrapCard className="bg-dark shockproof-card">
       <BootstrapCard.Body>
-        {title && <BootstrapCard.Title> {title} </BootstrapCard.Title>}
+        {title && <BootstrapCard.Title className="text-primary"> {title} </BootstrapCard.Title>}
         {children}
       </BootstrapCard.Body>
     </BootstrapCard>

@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 
 import ThemeContext from './../../../style-root/ThemeContext';
 
-import Card from './../../../components/Card';
+import Card from '../../../components/card/Card';
 import ButtonGroup from './../../../components/button/ButtonGroup';
 import Button from './../../../components/button/Button';
 

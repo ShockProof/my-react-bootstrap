@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from './../components/Card';
+import Card from '../components/card/Card';
 import SiteHeader from './components/site-header';
 import Form from './../components/form';
 import Input from './../components/form/Input';

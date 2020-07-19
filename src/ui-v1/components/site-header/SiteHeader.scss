@@ -4,4 +4,7 @@
   .dropdown-toggle::after { /** didn't find any bootstrap variable for this */
     color: $shockproof-primary-color;
   }
+
+  padding-top: 16px;
+  padding-bottom: 16px;
 }

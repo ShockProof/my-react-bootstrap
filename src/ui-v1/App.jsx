@@ -2,10 +2,27 @@ import React, { useContext } from 'react';
 
 import ThemeContext from './../style-root/ThemeContext';
 
-import { Container, Row, Col, Button, ButtonGroup, Form } from 'react-bootstrap';
-
 import Card from './../components/Card';
 import SiteHeader from './components/site-header';
+import Form from './../components/form';
+import Input from './../components/form/Input';
+import Row from './../components/grid/Row';
+import Column from './../components/grid/Column';
+import Container from './../components/grid/Container';
+import ButtonGroup from './../components/button/ButtonGroup';
+import Button from './../components/button/Button';
+
+function ThemePicker({ themeContext }) {
+  return (
+    <Card title="Theme Picker">
+      <ButtonGroup size="sm" block>
+        <Button onClick={() => themeContext.setTheme('first')} label="first" size="sm" />
+        <Button onClick={() => themeContext.setTheme('second')} label="second" size="sm" />
+        <Button onClick={() => themeContext.setTheme('third')} label="third" size="sm" />
+      </ButtonGroup>
+    </Card>
+  );
+}
 
 function App() {
 
@@ -17,79 +34,45 @@ function App() {
 
       <Container>
         <Row>
-          <Col>
+          <Column>
             <hr></hr>
-
-            <ButtonGroup size="sm" block>
-              <Button onClick={() => themeContext.setTheme('first')}>first</Button>
-              <Button onClick={() => themeContext.setTheme('second')}>second</Button>
-              <Button onClick={() => themeContext.setTheme('third')}>third</Button>
-            </ButtonGroup>
+            <ThemePicker themeContext={themeContext} />
 
             <Card title="Card TItle">
               <p> Some quick example text to build on the card title and make up the bulk of
               the card's content. </p>
-              <Button variant="primary">Go somewhere</Button>
+              <Button variant="primary" label="Go somewhere"/>
             </Card>
 
             <Card>
-              <Button size="sm" variant="primary">Primary</Button> {' '}
-              <Button variant="info">Info</Button> {' '}
-              <Button size="lg" variant="danger">Danger</Button>
+              <Button size="sm" variant="primary" label="Primary" /> {' '}
+              <Button variant="info" label="Info" /> {' '}
+              <Button size="lg" variant="danger" label="Danger" />
             </Card>
-          </Col>
+          </Column>
         </Row>
 
         <Row>
-          <Col>
+          <Column>
             <Card>
               <Form>
-                <Form.Group controlId="formBasicEmail">
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
-                  <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                  </Form.Text>
-                </Form.Group>
-
-                <Form.Group controlId="formBasicPassword">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" placeholder="Password" />
-                </Form.Group>
-
-                <Button variant="success" type="submit"> Submit </Button>
+                <Input textarea label="Email address" type="email" placeholder="Enter email"
+                  mutedText="We'll never share your email with anyone else."/>
+                <Input label="Password" type="password" placeholder="Password"/>
+                <Button variant="primary" type="submit" label="Submit" />
               </Form>
             </Card>
-          </Col>
+          </Column>
 
-          <Col>
+          <Column>
             <Card>
               <Form>
-                <Form.Group as={Row} controlId="formBasicName">
-                  <Form.Label column sm="4" size="sm">Name</Form.Label>
-                  <Col sm="8" style={{paddingTop: 7}}>
-                    <Form.Control size="sm" type="text" placeholder="Enter name" />
-                  </Col>
-                </Form.Group>
-
-                <Form.Group as={Row} controlId="formBasicTextarea">
-                  <Form.Label column sm="4" size="sm">Example textarea</Form.Label>
-                  <Col sm="8" style={{paddingTop: 7}}>
-                    <Form.Control as="textarea" rows="3" size="sm"/>
-                  </Col>
-                </Form.Group>
-
-                <Form.Group as={Row} controlId="formBasicCheckbox">
-                  <Form.Label column sm="4" size="sm">Example Checker</Form.Label>
-                  <Col sm="8" style={{paddingTop: 7}}>
-                    <Form.Check type="checkbox" label="Check me out" size="sm" />
-                  </Col>
-                </Form.Group>
-
-                <Button variant="primary" type="submit" size="sm"> Primary small </Button>
+                <Input horizontal label="Name" type="text" placeholder="Enter name"/>
+                <Input horizontal label="Example textarea" textarea />
+                <Button variant="primary" type="submit" size="sm" label="Primary small" />
               </Form>
             </Card>
-          </Col>
+          </Column>
         </Row>
 
       </Container>

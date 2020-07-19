@@ -1,11 +1,13 @@
-$shockproof-background-color: #222831;
-$shockproof-primary-color: #00adb5;
-$shockproof-dark: #393e46;
+$shockproof-background-color: #fafafa;
+$shockproof-primary-color: #7952b3;
+$shockproof-danger-color: #ff5252;
+$shockproof-info-color: #8c9eff;
+$shockproof-dark: #eceff1;
 $shockproof-light: $shockproof-dark;
-$shockproof-text-color: #8a8d93;
-$shockproof-border-color: #444951;
+$shockproof-text-color: #0d004d;
+$shockproof-border-color: rgba(0, 0, 0, 0.12);
 $shockproof-border-width: 1px;
-$shockproof-border-radius: 0rem;
+$shockproof-border-radius: 0.1rem;
 
 @import "./BootstrapCustomization.scss";
 

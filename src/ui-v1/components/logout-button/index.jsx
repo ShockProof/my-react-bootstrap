@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import Button from '@design-lib/button/Button';
 import Modal from '@design-lib/modal';
 
@@ -10,9 +13,15 @@ function Logout() {
   const handleCloseModal = () => setShowModal(false);
   const handleShowModal = () => setShowModal(true);
 
+  const buttonLabel = (
+    <>
+      <FontAwesomeIcon icon={faSignOutAlt} /> Logout
+    </>
+  );
+
   return (
     <>
-      <Button variant="danger" label="Logout" onClick={handleShowModal}/>
+      <Button variant="danger" label={buttonLabel} onClick={handleShowModal} />
 
       <Modal
         show={showModal}

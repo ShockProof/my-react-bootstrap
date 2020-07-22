@@ -1,15 +1,15 @@
 import React from 'react';
 
-import Card from '../components/card/Card';
-import SiteHeader from './components/site-header';
-import Form from './../components/form';
-import Input from './../components/form/Input';
-import Row from './../components/grid/Row';
-import Column from './../components/grid/Column';
-import Container from './../components/grid/Container';
-import Button from './../components/button/Button';
+import Card from '@design-lib//card/Card';
+import Form from '@design-lib/form';
+import Input from '@design-lib/form/Input';
+import Row from '@design-lib/grid/Row';
+import Column from '@design-lib/grid/Column';
+import Container from '@design-lib/grid/Container';
+import Button from '@design-lib/button/Button';
 
-import ThemePicker from './components/theme-picker';
+import SiteHeader from '@ui-v1-components/site-header';
+import ThemePicker from '@ui-v1-components/theme-picker';
 
 function App() {
 

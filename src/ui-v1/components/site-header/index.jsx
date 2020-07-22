@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Navbar, Nav, NavDropdown, Form, FormControl } from 'react-bootstrap';
 
+import Logout from '@ui-v1-components/logout-button';
+
 function SiteHeader({ title }) {
 
   const dropdownTitleComponent = (
@@ -28,6 +30,7 @@ function SiteHeader({ title }) {
         </Nav>
         <Form inline className="has-search">
           <FormControl type="text" placeholder="Search" className="mr-sm-2"/>
+          <Logout />
         </Form>
       </Navbar.Collapse>
     </Navbar>

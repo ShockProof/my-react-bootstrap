@@ -13,6 +13,8 @@ import {
 import SiteHeader from '@ui-v1-components/site-header';
 import ThemePicker from '@ui-v1-components/theme-picker';
 
+import AceEditorWrapper from './ace-editor-wrapper';
+
 function App() {
 
   return (
@@ -61,6 +63,8 @@ function App() {
             </Card>
           </Column>
         </Row>
+
+        <AceEditorWrapper />
 
       </Container>
     </div>

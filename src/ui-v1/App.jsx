@@ -20,7 +20,7 @@ function App() {
       <Container>
         <Row>
           <Column>
-            <hr></hr>
+            <div style={{height: 16}}></div>
             <ThemePicker />
 
             <Card title="Card TItle">

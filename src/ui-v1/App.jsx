@@ -1,12 +1,14 @@
 import React from 'react';
 
-import Card from '@design-lib//card/Card';
-import Form from '@design-lib/form';
-import Input from '@design-lib/form/Input';
-import Row from '@design-lib/grid/Row';
-import Column from '@design-lib/grid/Column';
-import Container from '@design-lib/grid/Container';
-import Button from '@design-lib/button/Button';
+import {
+  Button,
+  Card,
+  Column,
+  Container,
+  Form,
+  Input,
+  Row,
+} from '@design-lib';
 
 import SiteHeader from '@ui-v1-components/site-header';
 import ThemePicker from '@ui-v1-components/theme-picker';

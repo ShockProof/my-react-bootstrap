@@ -2,9 +2,7 @@ import React, { useContext } from 'react';
 
 import ThemeContext from './../../../style-root/ThemeContext';
 
-import Card from '@design-lib/card/Card';
-import ButtonGroup from '@design-lib/button/ButtonGroup';
-import Button from '@design-lib/button/Button';
+import { Button, ButtonGroup, Card } from '@design-lib';
 
 function ThemePicker() {
 

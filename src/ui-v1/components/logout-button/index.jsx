@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Button from '@design-lib/button/Button';
-import Modal from '@design-lib/modal';
+import { Button, Modal } from '@design-lib';
 
 function Logout() {
 
